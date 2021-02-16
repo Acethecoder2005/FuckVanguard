@@ -77,7 +77,7 @@ def triggerbot():
 def aimassist():
 	global bAimLock
 	c = interception()
-	c.set_filter(interception.is_mouse,interception_mouse_state.INTERCEPTION_MOUSE_LEFT_BUTTON_DOWN.value)
+	c.set_filter(interception.is_mouse,interception_mouse_state.INTERCEPTION_MOUSE_LEFT_BUTTON_UP.value)
 	while True:
 		hWnd = win32gui.FindWindow(None,"VALORANT  ")
 		if(hWnd == win32gui.GetForegroundWindow()):
